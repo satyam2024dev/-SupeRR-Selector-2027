@@ -1,0 +1,6 @@
+scenario,top10_overlap_with_mean_percentile,spearman_rank_correlation_on_common_candidates,unique_top10_members,repeated_player_rows_in_format_top10_union
+mean within-format percentile; deduplicate by player ID,10,1.0,10,1
+mean within-format standardized score; deduplicate by player ID,9,0.9932598389215743,10,1
+mean percentile of approximate event-count 95% lower bound,9,0.9837346693975473,10,1
+best available format percentile (max; optimistic duplicate rule),8,0.9522672563627612,10,1
+mean percentile among candidates independently eligible in both formats,2,1.0,10,1

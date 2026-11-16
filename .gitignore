@@ -1,0 +1,14 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+data/raw/*
+data/external/*
+outputs/
+*.log
+.DS_Store
+
+temp_test/
+backend-error.txt
