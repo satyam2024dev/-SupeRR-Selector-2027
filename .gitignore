@@ -14,3 +14,6 @@ temp_test/
 backend-error.txt
 
 .pytest_cache/
+
+pressure-web/node_modules/
+pressure-web/dist/
