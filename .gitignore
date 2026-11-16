@@ -12,3 +12,5 @@ outputs/
 
 temp_test/
 backend-error.txt
+
+.pytest_cache/
