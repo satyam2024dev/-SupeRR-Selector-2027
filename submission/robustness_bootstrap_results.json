@@ -1,0 +1,24 @@
+{
+  "wp_metrics": {
+    "inn1_log_loss": 0.636,
+    "inn1_naive_loss": 0.693,
+    "inn1_brier": 0.223,
+    "inn2_log_loss": 0.407,
+    "inn2_naive_loss": 0.692,
+    "inn2_brier": 0.131
+  },
+  "bootstrap_iterations": 150,
+  "split_half_iterations": 200,
+  "split_half_reliability": {
+    "batters_raw": 0.12,
+    "batters_shrunk": 0.21,
+    "bowlers_raw": 0.11,
+    "bowlers_shrunk": 0.2
+  },
+  "all_rounder_highlight": {
+    "player_name": "Mohammad Nawaz",
+    "batting_rank": 5,
+    "bowling_rank": 16,
+    "note": "Dual-threat impact profile across IPL/T20I high-pressure chases and death overs."
+  }
+}

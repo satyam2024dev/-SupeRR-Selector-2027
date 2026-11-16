@@ -178,6 +178,30 @@ def supporting_batter_rankings(format: str = Query(pattern="^(IPL|T20I)$")) -> d
     return {"source": f"submission/{filename}", "format": format, "count": len(records), "records": records}
 
 
+@app.get("/api/v1/rankings/batters/verified_all")
+def verified_all_batters() -> dict[str, Any]:
+    records = _rows(SUBMISSION, "ranking_batters_all_eligible.csv")
+    return {"source": "submission/ranking_batters_all_eligible.csv", "count": len(records), "records": records}
+
+
+@app.get("/api/v1/rankings/bowlers/verified_all")
+def verified_all_bowlers() -> dict[str, Any]:
+    records = _rows(SUBMISSION, "ranking_bowlers_all_eligible.csv")
+    return {"source": "submission/ranking_bowlers_all_eligible.csv", "count": len(records), "records": records}
+
+
+@app.get("/api/v1/rankings/bowlers/top10")
+def verified_bowler_top10() -> dict[str, Any]:
+    records = _rows(SUBMISSION, "ranking_bowlers_top10.csv")
+    return {"source": "submission/ranking_bowlers_top10.csv", "count": len(records), "records": records}
+
+
+@app.get("/api/v1/rankings/batters/top10")
+def verified_batter_top10() -> dict[str, Any]:
+    records = _rows(SUBMISSION, "ranking_batters_top10.csv")
+    return {"source": "submission/ranking_batters_top10.csv", "count": len(records), "records": records}
+
+
 @app.get("/api/v1/rankings/batters")
 def format_batter_rankings(
     format: str = Query(pattern="^(IPL|T20I)$"),
