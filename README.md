@@ -2,6 +2,10 @@
 
 **Cricket Talent Intelligence Platform**
 
+
+link of the website : https://supe-rr-selector-2027-delta.vercel.app/
+
+
 An evidence-led scouting and analytics application for IPL and T20I data. The Streamlit dashboard presents validated batter rankings, descriptive player profiles, match and pressure analysis, bowling evidence limits, and the current submission package.
 
 ## Architecture
